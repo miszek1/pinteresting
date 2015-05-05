@@ -1,6 +1,13 @@
 <div class="jumbotron center">
-	<h1>Join our monthly newsletter!</h1>
-	<p> Click here to sign up</p>
-	<p><%= link_to "Login", "#", class: "btn btn-default btn-lg btn-block" %><%= link_to "Go Now", "#", class: "btn btn-primary btn-lg btn-block" %></p>
+	<h1>Whats Happening?</h1>
+
+	<% if user_signed_in? %>
+	#sportyourpassion
+	<% else %>
+		<p> Click here to sign up</p>
+		<p>
+			<%= link_to "Login", new_user_session_path, class: "btn btn-default btn-lg btn-block" %>
+			<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg btn-block" %>
+		</p>
+	<% end -%>
 </div>
-	
