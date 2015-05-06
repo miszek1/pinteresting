@@ -2,11 +2,11 @@
 
 $body-bg:  						#2c3e50;
 $font-font-family: 				'Roboto', sans-serif;
-$navbar-default-bg: 			#ecf0f1;
-$navbar-default-link-color:		#2c3e50;
+$navbar-default-bg: 			#3498db;
+$navbar-default-link-color:		white;
 $brand-primary: 				#f1c40f;
-$jumbotron-bg: 					#ecf0f1;
-$panel-heading:					#34495e;
+$jumbotron-bg: 					#3498db;
+
 
 
 @import 'bootstrap';
@@ -20,6 +20,6 @@ $panel-heading:					#34495e;
 }
 
 .jumbotron {
-	background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Zebra-3D-Grey-Seamless-Pattern-For-Website-Background.jpg)
+	color: white;
 }
 
