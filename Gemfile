@@ -39,6 +39,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'devise'
 
+gem 'paperclip'
+
 group :development, :test do 
 	gem 'sqlite3'
 end
