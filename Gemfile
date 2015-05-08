@@ -39,7 +39,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'devise'
 
-gem 'paperclip'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 group :development, :test do 
 	gem 'sqlite3'
