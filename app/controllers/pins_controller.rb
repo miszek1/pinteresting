@@ -23,7 +23,8 @@ class PinsController < ApplicationController
     @pin = current_user.pins.build(pin_params)
    if @pin.save
     redirect_to @pin, notice: 'You Successfully made a Pin! Congrats!'
-  else render action: 'edit'
+  else
+    render action: 'edit'
     end
 
   end
