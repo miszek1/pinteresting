@@ -1,17 +1,23 @@
-<div class="container">    
+<div class="row">    
+ <div class="col-md-offset-2 col-md-8">
+  <div class="panel panel-default">
 
-  <div class="form-panel">
+	  		<div class="form-heading center">
+				<%= image_tag @pin.image.url(:medium) %>
+			</div>
 
-			<%= image_tag @pin.image.url(:medium) %>
+			<div class="panel-body">
+				<p><%= @pin.description %></p>
+				<p><strong><%= @pin.user.email if @pin.user %></strong></p>
+			</div>
 
-			<p>
-			  <strong>Description:</strong>
-			  <%= @pin.description %>
-			</p>
 			<% if @pin.user == current_user %>
+			<div class="panel-footer center">
 			<%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-default" %> |
 			<% end -%>
 
 			<%= link_to 'Back', pins_path, class: "btn btn-primary" %>
+			</div>
+		</div>
 	</div>
 </div>
