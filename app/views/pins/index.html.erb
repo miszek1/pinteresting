@@ -1,5 +1,7 @@
 <%= render 'pages/home' unless user_signed_in? %> 
 
+<%= render 'pages/homealt' if user_signed_in? %>
+
 <div id="pins" class="transitions-enabled">
       <% @pins.each do |pin| %>
            
