@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-gem 'devise'
+gem 'devise', '3.4.1'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
