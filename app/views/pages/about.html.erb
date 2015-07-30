@@ -1,10 +1,34 @@
-<div class="jumbotron center" style="background-image">
+<div class="jumbotron center">
 
-<div class="Banner">
-<%= image_tag("banner.jpg", :alt => "banner image") %>
+<div class="row">
+	<div class="col-md-8">
+		<div class="Banner">
+			<%= image_tag("about_main.jpg", :alt => "banner image") %>
+		</div>
+	</div>
+
+	<div class="col-md-4" id="background-tweet">
+		<%= render 'twitter' %>
+
+		<%= link_to 'LinkedIn', ('https://www.linkedin.com/in/afoster2'), class:"btn btn-primary" %>
+		<%= link_to 'Facebook', ('https://www.facebook.com/andrew.foster.7374'), class:"btn btn-primary" %>
+		<%= link_to 'Twitter', ('https://twitter.com/AFcountrymusic'), class:"btn btn-primary" %>
+	</div>
 </div>
 
-<h1>About Us</h1>
-<p>Reel Sportswear is dedicated to serving its local community and environment in conservation of marine resources and reduction of environmental impact. Our company firmly believes that by educating, conserving and promoting the present and future of our natural marine resources, we can preserve a sustainable future for the sport of fishing and the wildlife that we share our home with. Reel Sportswear has joined efforts with CCA Texas in hopes of forging a bond between our customers and our waterways. To help, Reel Sportswear donates 5% of gross sales to CCA Texas. Help Reel Sportswear and CCA Texas preserve and promote conservation of our marine resources by joining the CCA. For more information please visit www.ccatexas.org</p>
+<div class="row">
+<div class="col-md-8">
+	<h1 class="home_title">Andrew Foster</h1>
+	<h4 class="home_sub">History</h4> <h6 class="home_sub">"Better to remain silent and be thought a fool, than to speak and remove all doubt."</h6>
+	<p class="home_txt">In early 2009, Andrew and his freind Jason Rylance founded Lost Tie LLC., a web development firm in Corpus Christi. The firm focused on CD package design at first but quickly grew into a diverse print & web design company with a steady client list. </p>
+
+	<p class="home_txt">In early 2011, Andrew and friend Chris Lamb founded Reel Sportswear. A fishing apparel company located in Corpus Christi. Designs, Marketing, and the outdoors inspired most of Andrews designs. You can view the full line at www.reelsportswear.com </p>
+
+
+
+
 
 </div>
+</div>
+
+</div> 
